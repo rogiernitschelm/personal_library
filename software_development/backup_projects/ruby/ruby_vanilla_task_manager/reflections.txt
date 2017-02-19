@@ -1,0 +1,24 @@
+# What you added to Udacitask 2.0
+# -------------------------------------------------------
+1. What is the gem of your choice and how did you use it?
+Artii - To make a more obvious difference between header and content of the list.
+
+2. Describe the 2 features you added to the project.
+  a) Feature 1 automatically add the description to site_name when site_name is empty
+  b) Feature 2 method to check priority of an item
+  c) Feature 3 method to change priority of an item to a new priority level
+
+# REFLECTIONS
+# -------------------------------------------------------
+1. How long did you spend working on this project?
+A few hours. But most of the time I was figuring out the obstacles I faced.
+2. What was the most rewarding challenge you conquered?
+Figuring out how to ensure false priority levels could be catched. It was harder
+than I expected, so I had to do some research.
+3. What two additional features did you build? Why?
+I build two features to change or display info about the priority. Some things
+might need a higher priority. And sometimes you have to check if a priority is
+yet present.
+4. Where do you still have room to grow?
+I think I made some progress yet but I need to practise the more advanced features.
+

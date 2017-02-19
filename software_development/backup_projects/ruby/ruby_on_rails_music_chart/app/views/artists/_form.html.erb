@@ -1,0 +1,26 @@
+<div class="col-md-12 artist">
+
+<%= form_for @artist do |f| %>
+  <div class="field devise-field">
+    <label for="name">
+    <%= f.text_field :name, placeholder: "artist name"%>
+    </label>
+  </div>
+
+  <div class="field devise-field">
+    <label for="description">
+    <%= f.text_field :description, placeholder: "a description" %>
+    </label>
+  </div>
+
+  <div class="field devise-field">
+    <label for="image">
+    <%= f.file_field :image %>
+    </label>
+  </div>
+
+    <%= f.submit (@artist.new_record? ? "create" : "update"), class: "ghost-button ghost-button-small margin-20 blue" %>
+
+<% end %>
+
+</div>

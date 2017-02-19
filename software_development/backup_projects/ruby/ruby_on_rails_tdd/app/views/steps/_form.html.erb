@@ -1,0 +1,18 @@
+<%= form_for @step do |f| %>
+
+  <%= f.label :step_number %>
+  <%= f.text_field :step_number %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :code %>
+  <%= f.text_field :code %>
+
+  <%= f.label :tutorial %>
+  <%= f.select :tutorial_id, options_for_select(Tutorial.all.map{|a|[a.title, a.id]}) %>
+
+
+  <%= f.submit (@step.new_record? ? "Create" : "Update"), class: "btn-large waves-effect waves-light white-text red lighten-1 center" %>
+
+<% end %>

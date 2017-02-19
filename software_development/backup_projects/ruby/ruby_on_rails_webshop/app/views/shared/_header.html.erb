@@ -1,0 +1,105 @@
+<div id="sidr">
+  <ul>
+    <%= link_to "#", class: "side-logo" do %>
+      MyStore
+      <span class="logo-dot accent-bg"></span>
+    <% end %>
+    <li class="active">
+      <%= link_to 'Store', shop_path %>
+    </li>
+    <li>
+      <%= link_to 'Product category 1', root_path %>
+    </li>
+    <li>
+      <%= link_to 'Product category 2', root_path %>
+    </li>
+    <li class="divider"><span></span></li>
+    <li>
+      <%= link_to 'About', root_path %>
+    </li>
+    <li>
+      <%= link_to 'Privacy', root_path %>
+    </li>
+    <li>
+      <%= link_to 'Terms and conditions', root_path %>
+    </li>
+  </ul>
+
+  <div class="side-social">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-pinterest"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+  </div>
+</div>
+
+<div class="nav-container">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          Store<span class="logo-dot accent-bg"></span>
+        <% end %>
+        <a href="#sidr" class="side-menu-opener mobile">
+          <div class="bars">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+            </div>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="collapse-navigation">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+              <a href="./index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Home <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu">
+                  <li>
+                    <%= link_to 'Home', root_path %>
+                  </li>
+                  <li>
+                    <%= link_to 'Store', shop_path %>
+                  </li>
+                  <li>
+                    <%= link_to 'About', root_path %>
+                  </li>
+              </ul>
+          </li>
+
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa fa-paper-plane"></i> Contact
+            <% end %>
+          </li>
+          <li>
+            <% if @cart.total_price > 0 %>
+            <%= link_to @cart, class: 'menu-cart' do %>
+                  <i class="fa fa-shopping-cart"></i>
+                  <%= number_to_currency @cart.total_price %>
+                <% end %>
+              <% else %>
+              <%= link_to root_path, class: 'menu-cart' do %>
+                <i class="fa fa-shopping-cart"></i>
+              <%= @cart.total_price %>
+              <% end %>
+            <% end %>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#sidr" class="side-menu-opener">
+              <div class="bars">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+</div>

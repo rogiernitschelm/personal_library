@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+ @import "font-mfizz.css";
+ @import "materialize/components/color";
+ $primary-color: color("red", "lighten-1") !default;
+ @import 'materialize';
+
+//
+
+.tutorial-image {
+  height: 200px;
+  width: 200px;
+}
+
+textarea {
+  height: 200px;
+}
+
+//
+
+.small-margin {
+  margin: 5px;
+}
+//
+
+.large {
+  height: 650px !important;
+}
+
+// spacing
+
+.spacing {
+  letter-spacing: 15px;
+}
+
+// background
+
+.background-image {
+  background-image: url(background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+// icon-fonts
+
+.icon-font {
+  font-size: 150px;
+  margin-bottom: 10px;
+}
+
+// links
+
+a:link {
+   color: #ef5350;
+}
+
+a:visited {
+   color: #ef5350;
+}
+
+a:hover {
+   color: black;
+   background-color: #eeeeee;
+   text-decoration: none;
+}
+
+a:active {
+   color: #eeeeee;
+}
+
+ // lists
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.inline-list {
+  display: inline;
+  margin-bottom: 20px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

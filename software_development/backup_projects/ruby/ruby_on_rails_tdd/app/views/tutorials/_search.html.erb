@@ -1,0 +1,6 @@
+<h5 class="header light red-text text-lighten-1">A girl has no name? </h5>
+
+<%= form_tag '/tutorials', :method => "get", id: "search-form" do %>
+  <%= search_field_tag :search, params[:search], placeholder: "insert a search query here" %>
+  <%= submit_tag "search", :name => nil, id: "search-form", class: "btn-large waves-effect waves-light white-text red lighten-1 center" %>
+<% end %>

@@ -1,0 +1,34 @@
+<div class="container form-box">
+  <div class="row">
+
+    <div class="col-md-12 music-box">
+
+      <h3>Artist: <%= @artist.name %></h3>
+
+    </div>
+
+  </div>
+
+  <div class="row artist-show artist">
+
+    <div class="col-sm-12 text-center">
+      <p><%= image_tag @artist.image_url.to_s, class: :imgbig %></p>
+    </div>
+    <div class="col-sm-12 text-left">
+      all songs by <% @artist.name %>
+      <%= @artist.description %>
+      <% @artist.songs.each do |song| %>
+      <p>- <%= link_to song.title, song_path(song.id) %> | <%= song.year %></p>
+      <% end %>
+      <ul class="no-margin no-bullets text-left blue-links">
+        <li class="inline-list-blue"><%= link_to "sabotage this artist's information", edit_artist_path( @artist.id ) %></li>
+        <li class="inline-list-blue"><%= link_to "take out this artist", artist_path( @artist.id ), method: :delete, data: {confirm: "Do you wish to take out #{@artist.name}?"} %></li>
+        <li class="inline-list-blue"><%= link_to "back to artists", artists_path %></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+</div>

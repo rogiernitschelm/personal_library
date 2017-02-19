@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Event planner</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel=
+    'stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.2.1.js">
+    </script>
+
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="toggle-events" href="#events">events</a>
+                </li>
+                <li>
+                    <a class="toggle-account" href=
+                    "#registrations">account</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ACCOUNT REGISTRATION AND LOGIN -->
+
+    <div class="container account-container">
+        <div class="row">
+            <div class="col-lg-12 account-box center-block" id="login-form">
+                <h3>Login</h3>
+                <hr>
+                <form autocomplete="on">
+                    <label for="login-field"><span>Name</span>
+                    <input autofocus id="login-field" placeholder=
+                    "enter your account name"> <span class="error" id=
+                    "placeholderError"></span></label> <label for=
+                    "login-password"><span>Password</span> <input id=
+                    "login-password" placeholder="enter your password" type="password">
+                    <span class="error" id="placeholderError2"></span></label>
+                    <label for="placeholder-submit"><input class=
+                    "btn btn-default" id="placeholder-submit" type="submit"
+                    value="submit"></label> <label><a class="hide-login" href=
+                    "#registrations">not yet a member?</a></label>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 account-box center-block" id=
+            "registration-form" style="display:none">
+                <h3>Registration</h3>
+                <hr>
+                <form autocomplete="on">
+                    <label for="fullname-id"><span>Name</span> <input id=
+                    "fullname-id" name="name" pattern=
+                    "^([ \u00c0-\u01ffa-zA-Z'\-])+$" placeholder=
+                    "i.e. John Doe" required=""> <span class="error" id=
+                    "fullname-error"></span></label> <label for=
+                    "telephone-number"><span>Telephone number (optional)</span>
+                    <input id="telephone-number" name="tel" pattern=
+                    "((\(\d{3,4}\)|\d{3,4}-)\d{4,9}(-\d{1,5}|\d{0}))|(\d{4,12})"
+                    placeholder="i.e. 06 12 345 678"> <span class="error" id=
+                    "telephone-error"></span></label>
+                    <hr>
+                    <label for="email-adress"><span>E-mail adress</span>
+                    <input id="email-adress" name="email" pattern=
+                    "([a-zA-Z][\w\.-]*[a-zA-Z0-9])@([a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z])"
+                    placeholder="i.e. johndoe@gmail.com" required="" type=
+                    "email"> <span class="error" id=
+                    "email-error"></span></label> <label for=
+                    "password"><span>Your password</span> <input autocomplete=
+                    "off" id="password" maxlength="20" placeholder=
+                    "fill in a password" required="" title=
+                    "What is your desired password?" type="password">
+                    <span class="error" id="password-error"></span></label>
+                    <label for="password-repeat"><span>Repeat your
+                    password</span> <input autocomplete="off" id=
+                    "password-repeat" maxlength="20" placeholder=
+                    "repeat your password" required="" title=
+                    "Please repeat your password." type="password">
+                    <span class="error" id=
+                    "password-repeat-error"></span></label> <label for=
+                    "submit"><input class="btn btn-default" id="submit" type=
+                    "submit" value="submit"></label> <label><a class=
+                    "hide-registration" href="#login-field">already a
+                    member?</a></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- EVENTS AND EVENT CREATION -->
+
+    <div class="container event-container" style="display:none">
+        <div class="row event-box new-events-here center-block">
+            <a class="new-events btn btn-default fast-click" href=
+            "#event-name">click here to add new events</a><br>
+            <h3>Current events</h3>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 event-box center-block" id="event-creation">
+                <h3>New event</h3>
+                <hr>
+                <form id="event-form" name="event-form">
+                    <label for="event-name"><span>Name of the event</span>
+                    <input id="event-name" pattern=
+                    "^([ \u00c0-\u01ffa-zA-Z'\-])+$" placeholder=
+                    "i.e. James' concert" required="" type="text"> <span class=
+                    "error" id="event-name-error"></span></label> <label for=
+                    "event-type"><span>Type of event</span> <input id=
+                    "event-type" pattern="^([ \u00c0-\u01ffa-zA-Z'\-])+$"
+                    placeholder="i.e. birthday" list="type-event" required="" type="text">
+                    <datalist id="type-event">
+                        <option value="Karaoke">
+                            Karaoke
+                        </option>
+                        <option value="Oktoberfest">
+                            Oktoberfest
+                        </option>
+                        <option value="Biljart">
+                            Biljart
+                        </option>
+                        <option value="Birthday">
+                            Birthday
+                        </option>
+                        <option value="Housewarming">
+                            Housewarming
+                        </option>
+                        <option value="Conference">
+                            Conference
+                        </option>
+                        <option value="Concert">
+                            Concert
+                        </option>
+                        <option value="Lunch">
+                            Lunch
+                        </option>
+                        <option value="Dinner">
+                            Dinner
+                        </option>
+                    </datalist> <span class="error" id=
+                    "event-type-error"></span></label> <label for=
+                    "event-host"><span>Who hosts the event?</span> <input id=
+                    "event-host" name="fname" pattern=
+                    "^([ \u00c0-\u01ffa-zA-Z'\-])+$" placeholder=
+                    "i.e. Joe Smith" required="" type="text"> <span class=
+                    "error" id="event-host-error"></span></label> <label for=
+                    "event-location"><span>What is the location?</span>
+                    <input id="event-location" placeholder=
+                    "i.e. Los Angeles" required="" type="text"> <span class=
+                    "error" id="event-location-error"></span></label>
+                    <label for="event-start"><span>What date is the
+                    event?</span> <input id="event-start" required="" type=
+                    "datetime-local"> <span class="error" id=
+                    "event-start-error"></span></label> <label for=
+                    "event-end"><span>When does the event end?</span>
+                    <input id="event-end" required="" type="datetime-local">
+                    <span class="error" id="event-end-error"></span></label>
+                    <label for="event-guests"><span>Who are your guests?</span>
+                    <input id="event-guests" name="fname" pattern=
+                    "^([ \u00c0-\u01ffa-zA-Z'\-])+$" placeholder=
+                    "i.e. Marie, Hank, Pete" required="" type="text">
+                    <span class="error" id="event-guests-error"></span></label>
+                    <label for="event-message"><span>Message
+                    <em>(optional)</em></span> <input autocomplete="off" id=
+                    "event-message" placeholder=
+                    "any message you'd like to send" type="text"> <span class=
+                    "error" id="message-error"></span></label> <label for=
+                    "add-event"><input class="btn btn-default" id="add-event"
+                    type="submit" value="submit"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyBbfCEefp-6LbKU659442Hn3M7yGjgqAVM&libraries=places"
+    type="text/javascript">
+    </script> 
+    <script src="js/app.js">
+    </script> 
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+
+</body>
+</html>

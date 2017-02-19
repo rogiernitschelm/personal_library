@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col s12 m12 l12">
+    <div class="card medium">
+      <div class="container">
+
+        <h3 class="red-text text-lighten-1">Tutorials</h3>
+
+        <br><br>
+
+        <%= render 'search' %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+
+  <% @tutorials.each do |tutorial| %>
+
+    <div class="col s12 m10 l6">
+      <div class="card medium">
+          <div class="card-image">
+
+            <%= image_tag(tutorial.image_url.to_s, class: 'tutorial-image') %>
+
+          </div>
+          <h5 class="cart-title center"><%= link_to tutorial.title, tutorial_path(tutorial.id) %></h5>
+          <div class="card-action grey lighten-3">
+            <%= link_to "edit tutorial", edit_tutorial_path( tutorial.id ), class: "btn-large waves-effect waves-light white-text red lighten-1 center" %>
+          </div>
+      </div>
+    </div>
+
+    <% end %>
+
+</div>
+
+<div class="row">
+  <div class="col s12 m6 l6">
+    <div class="icon-block">
+
+      <%= link_to link_to "new tutorial", new_tutorial_path, class: "btn-large waves-effect waves-light white-text red lighten-1 center" %>
+
+    </div>
+  </div>
+</div>

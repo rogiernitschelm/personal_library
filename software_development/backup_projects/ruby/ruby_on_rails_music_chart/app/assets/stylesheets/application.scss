@@ -1,0 +1,210 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap.min";
+@import "songs";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Sans|Poiret+One|Indie+Flower|Varela+Round);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+
+.margin-20 {
+  margin-left: 20px !important;
+}
+* {
+  font-family: "Josefin Sans";
+}
+
+.name-tag{
+  margin-left: 20px;
+}
+
+h3 {
+  font-family: "Indie Flower";
+  color:#0066ff;
+}
+.devise-field input {
+    font-family: "Indie Flower";
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    width: 320px;
+    max-width: 90%;
+    height: 40px;
+    margin: 11px;
+    margin-left: 20px;
+}
+.no-margin {
+    margin: 0;
+}
+.title-box {
+    color: #404040;
+    font-family: "Indie Flower";
+    background: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 2px 2px 2px 2px;
+
+}
+.song-title {
+    background: white;
+    margin: 0px;
+}
+.login-cover {
+    height: 240px;
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 5px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 5px;
+}
+.form-box {
+    margin-left: 12px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 7px;
+    border: 2px solid white;
+}
+.birthdate input {
+    padding-left: 35px;
+}
+.form-box h2 {
+    font-family: "Indie Flower";
+    color: white;
+}
+
+body {
+    background-image: url(tracks.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.inline-list {
+    display: inline;
+    margin-right: 12px;
+    font-size: 9
+}
+.inline-list a:link {
+    color: white;
+    text-decoration: none;
+}
+.inline-list a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:link {
+    font-size: 14px;
+    color: #0066ff;
+    text-decoration: none;
+}
+a:visited {
+    font-size: 14px;
+    color: #0066ff;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.stalk {
+    font-family: "Indie Flower";
+    font-size: 23px;
+    font-style: italic;
+    color: white;
+}
+.text-white-handwriting {
+    font-family: "Indie Flower";
+    color: white;
+    font-size: 18px;
+}
+.no-margin-list {
+    margin: 0px;
+}
+.background-for-text {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 7px;
+}
+.landing-form {
+    text-align: center;
+    margin-top: 100px;
+}
+.text-center {
+    text-align: center;
+}
+.ghost-button {
+    margin-left: -38px;
+    font-family: "Indie Flower";
+    font-size: 21px !important;
+    display: inline-block;
+    height: 50px;
+    width: 350px;
+    padding: 8px;
+    color: white !important;
+    border: 2px solid #fff !important;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: border-color 0.3s ease-out, color 0.3s ease-out;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+    background-color: transparent;
+}
+.ghost-button-small {
+    width: 100px;
+    height: 50px !important;
+}
+#error_explanation h2 {
+    font-size: 25px;
+}
+#error_explanation {
+    color: white;
+    font-family: "Indie Flower";
+    font-size: 20px;
+    color: #ff3333;
+}
+.error-message {
+    color: white;
+}
+.ghost-button:hover,
+.ghost-button:active {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    transition: border-color 0.4s ease-in, color 0.4s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+}
+.no-bullets {
+    list-style-type: none;
+}
+.block-3d-text {
+    font-family: "Indie Flower";
+    color: white;
+    font-size: 50px;
+    text-shadow: rgb(38, 37, 64) 4px 4px 4px;
+}
+.nav-container-top {
+    margin-top: 2px;
+    font-family: "Indie Flower";
+    color: white;
+}
+.small-checkbox {
+    max-width: 20px;
+}

@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col s12 m12 l12">
+    <div class="card medium">
+      <div class="container">
+
+        <h3 class="red-text text-lighten-1">Languages</h3>
+
+        <br><br>
+
+        <%= render 'search' %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <% @languages.each do |language| %>
+
+  <div class="col s12 m12 l12">
+    <div class="card large">
+      <div class="container">
+      <h1><i class="<%= language.fonticon %>"></i></h1>
+
+      <h3 class="grey-text text-darken-3"> <%= link_to language.name, language_path(language.id) %></h3>
+      <br>
+      <h5 class="card-reveal grey-text text-darken-3"><%= language.feature %></h5>
+      <p class="grey-text light text-darken-3 card-content"><%= language.description %></p>
+
+      <% language.tutorials.each do |tutorial| %>
+
+      <div class="card-action grey lighten-3">
+        <%= link_to tutorial.title, tutorial_path(tutorial.id), class: "btn-large waves-effect waves-light white-text red lighten-1 center" %>
+      </div>
+
+      <% end %>
+
+      </div>
+    </div>
+  </div>
+
+  <% end %>
+
+</div>
+
+<div class="row">
+  <div class="col s12 m6 l6">
+    <div class="icon-block">
+
+      <%= link_to link_to "new language", new_language_path, class: "btn-large waves-effect waves-light white-text red lighten-1 center" %>
+
+    </div>
+  </div>
+</div>

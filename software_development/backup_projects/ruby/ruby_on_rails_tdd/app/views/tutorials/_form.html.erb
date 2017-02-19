@@ -1,0 +1,19 @@
+<%= form_for @tutorial do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :language %>
+  <%= f.select :language_id, options_for_select(Language.all.map{|a|[a.name, a.id]}) %>
+
+  <%= f.label :image %><br>
+  <%= f.file_field :image %>
+
+  <br><br>
+
+  <%= f.submit (@tutorial.new_record? ? "Create" : "Update"), class: "btn-large waves-effect waves-light white-text red lighten-1 center" %>
+
+<% end %>

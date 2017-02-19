@@ -1,0 +1,25 @@
+<div class="col-md-12 song">
+
+<%= form_for @song do |f| %>
+  <div class="field devise-field">
+    <label for="title">
+    <%= f.text_field :title, placeholder: "song title"%>
+    </label>
+  </div>
+
+  <div class="field devise-field">
+    <label for="year">
+    <%= f.text_field :year, placeholder: "year" %>
+    </label>
+  </div>
+
+  <div class="field devise-field">
+    <label for="artist">
+      <%= f.select :artist_id, options_for_select(Artist.all.map{|a|[a.name, a.id]}) %>
+    </label>
+  </div>
+    <%= f.submit (@song.new_record? ? "create" : "update"), class: "ghost-button ghost-button-small margin-20 blue" %>
+
+<% end %>
+
+</div>

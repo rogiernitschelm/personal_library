@@ -1,0 +1,4 @@
+<%= form_tag '/freelancers', :method => "get", id: "search-form" do %>
+<%= search_field_tag :search, params[:search], placeholder: "insert a search query here", autofocus: true %>
+<%= submit_tag "search", :name => nil, id: "search-form", class: "btn-large grey darken-2 waves-effect waves-light" %>
+<% end %>

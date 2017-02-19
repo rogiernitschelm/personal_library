@@ -1,0 +1,237 @@
+/* Colors 
+
+French flag blue: #0055A4
+French flag red: #EF4135
+
+*/
+
+body {
+    font-family: 'Open Sans';
+    font-size: 11px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0055A4;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #0055A4;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #0055A4;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* footer */
+
+.footer1 {
+    background-color: #FFFFFF;
+    margin: 7px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 7px;
+    padding-bottom: 2px;
+    min-width: 320px;
+    max-height: 17%;
+    overflow: auto;
+    border: 1px solid #0055A4;
+}
+
+.btn-secundary {
+    background-color: white;
+    margin: 3px;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 12px;
+    font-weight: lighter;
+    border: 1px solid #0055A4;
+    min-width: 240px;
+    height: 100%;
+}
+
+.location-list {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    margin-top: 11px;
+}
+
+.location-list li {
+    margin: 2px;
+    margin-left: 15px;
+    padding: 4px;
+    min-width: 240px;
+    height: 30px;
+}
+
+/* infowindows */
+
+.infowindows {
+    font-size: 11px;
+    padding: 0%;
+    margin: 0%;
+    height: 200px;
+    width: 333px;
+    overflow: auto;
+}
+
+.flickrImg {
+    margin: 1px;
+}
+
+/* top-navigation */
+
+.hamburger {
+    margin-left: 0px;
+    margin-right: 9px;
+    margin-top: 9px;
+}
+
+.navbar-collapse {
+    margin: 12px;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.navbar-default {
+    background-color: #FFFFFF;
+    border: 0px;
+    margin: 7px;
+    border-radius: 7px;
+}
+
+.search-bar {
+    margin: 7px;
+    min-width: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+    border: 1px solid #0055A4;
+}
+
+/* auto-complete */
+
+.tags {
+    margin: 5px;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    opacity: 50%;
+    border: 11px solid white!important;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    width: 160px;
+    padding: 14px 0;
+    margin: 12px 0 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    .ui-menu-item > a.ui-corner-all {
+        display: block;
+        padding: 3px 15px;
+        clear: both;
+        font-weight: normal;
+        line-height: 18px;
+        color: FFFFFF;
+        white-space: nowrap;
+        &.ui-state-hover, &.ui-state-active {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: FFFFFF;
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            background-image: none;
+        }
+    }
+}
+
+/* media-queries */
+
+@media screen and (min-width: 800px) {
+    label {
+        font-size: 13px;
+    }
+
+    .infowindows {
+        font-size: 13px;
+        height: 300px;
+        width: 500px;
+    }
+
+    .flickrImg {
+        max-height: 140px;
+        margin: 1px;
+    }
+
+}
+
+@media screen (min-width: 400px) and (max-width: 800px) {
+    label {
+        font-size: 12px;
+    }
+
+    .infowindows {
+        font-size: 12px;
+        height: 240px;
+        width: 400px;
+    }
+
+    .flickrImg {
+        max-height: 120px;
+        margin: 1px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    label {
+        font-size: 9px;
+    }
+
+    .infowindows {
+        font-size: 11px;
+        height: 120px;
+        width: 200px;
+    }
+
+    .flickrImg {
+        max-height: 150px;
+        margin: 1px;
+    }
+}

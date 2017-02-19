@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "122",
+      "firstName": "Roggers",
+      "age": 10,
+      "companyId": "2"
+    },
+    {
+      "firstName": "Stephen",
+      "age": 26,
+      "id": "HyvMphNYl"
+    },
+    {
+      "id": "1222",
+      "firstName": "aasdsfad",
+      "age": 10,
+      "companyId": "2"
+    },
+    {
+      "firstName": "Staaaephen",
+      "age": 33,
+      "id": "Ha1yvMphNYl",
+      "companyId": "2"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "APPLE",
+      "description": "iPhone"
+    },
+    {
+      "id": "2",
+      "name": "GOOGLE",
+      "description": "uPhone"
+    }
+  ]
+}

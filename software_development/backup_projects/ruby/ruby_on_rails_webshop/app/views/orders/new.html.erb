@@ -1,0 +1,29 @@
+<header class="secondary">
+  <div class="background-image-holder parallax-background overlay" data-stellar-background-ratio="0.9">
+    <%= image_tag('1600x900.png', class: 'background-image', alt: 'Background') %>
+  </div>
+
+  <div class="container align-vertical hero">
+    <div class="row">
+      <div class="col-md-5 text-left">
+        <h1>Your order</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br>
+
+  <%= render 'form' %>
+
+<br>
+
+<!-- script for braintree -->
+
+<script>
+
+  braintree.setup('<%= @client_token %>', 'dropin', {
+    container: 'payment-form'
+  });
+
+</script>

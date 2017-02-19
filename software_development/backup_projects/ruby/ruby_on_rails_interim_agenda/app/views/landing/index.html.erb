@@ -1,0 +1,51 @@
+<% if !user_signed_in? %>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12 l12 card">
+      <div class="card-action">
+        <h4 class="light ">Already a member? </h4>
+          <%= link_to "log in", new_user_session_path, class: "big-link btn grey darken-4 waves-effect waves-light landing-button" %>
+          <br><br>
+        <h4 class="light ">Not yet a member?</h4>
+          <%= link_to "sign up", new_user_registration_path, class: "big-link btn grey darken-4 waves-effect waves-light landing-button" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+
+      <div class="col s12 m6 l6">
+        <div class="icon-block">
+          <h5 class="center ">No recruiters allowed!</h5>
+          <p class="light ">
+            Third-party recruiters are not allowed to use our application.
+            Imagine your financial gain when cutting out recruitment fees!
+          </p>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l6">
+        <div class="icon-block">
+          <h5 class="center ">Transparent rates</h5>
+          <p class="light ">
+            We take an active stance against intransparancy. Payrates are always
+            visible. We also require jobs to have a minimum payrate.
+          </p>
+        </div>
+      </div>
+
+      <!-- end icon section -->
+
+    </div>
+  </div>
+</div>
+
+<% end %>

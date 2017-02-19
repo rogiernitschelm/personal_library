@@ -1,0 +1,83 @@
+<header class="fullscreen-element">
+  <div class="background-image img-responsive-holder parallax-background overlay" data-stellar-background-ratio="0.9">
+    <%= image_tag('1600x900.png', class: 'background-image img-responsive', alt: 'Background') %>
+  </div>
+
+  <div class="container align-vertical hero">
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-md-offset-7 col-sm-offset-7 text-left">
+        <h1>Modern Chair</h1>
+        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
+        <div class="button-group">
+          <%= link_to 'Shop now', root_path, class: 'btn btn-primary' %>
+        </div>
+      </div>
+    </div><!--end of row-->
+  </div><!--end of container-->
+</header>
+
+<div class="action-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <%= link_to root_path do %>
+          <span data-icon="v" class="icon"></span> <span class="text">Fast Delivery</span>
+        <% end %>
+      </div>
+      <div class="col-sm-4">
+        <%= link_to root_path do %>
+          <span data-icon="v" class="icon"></span> <span class="text">Fast Delivery</span>
+        <% end %>
+      </div>
+      <div class="col-sm-4">
+        <%= link_to root_path do %>
+          <span data-icon="v" class="icon"></span> <span class="text">Fast Delivery</span>
+        <% end %>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
+
+<section>
+  <div class="background-image img-responsive-holder overlay" data-stellar-background-ratio="0.9">
+    <%= image_tag('1600x900.png', class: 'background-image img-responsive', alt: 'Background') %>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 text-left">
+        <h2 class="page-title">For your family</h2>
+        <p class="description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
+        <%= link_to 'Shop now', root_path, class: 'btn btn-primary' %>
+      </div>
+    </div><!--end of row-->
+  </div><!--end of container-->
+</section>
+
+<br>
+
+<h2 class="page-title text-center">Products</h2>
+
+<%= render 'shared/list' %>
+
+<section class="newsletter accent-bg">
+  <div class="background-image img-responsive-holder overlay accent" data-stellar-background-ratio="0.9">
+    <%= image_tag('1600x900.png', class: 'background-image img-responsive', alt: 'Background') %>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 text-left">
+        <h2 class="page-title">Join our newsletter</h2>
+        <p>Bemporibus autem quibusdam et aut officiis debi s
+          tis autem quibusdam et aut officiis debitis.</p>
+      </div>
+      <div class="col-md-4">
+        <form class="newsletter-form">
+          <input type="text" name="email" id="email" placeholder="Your email address">
+        </form>
+      </div>
+      <div class="col-md-3">
+          <%= link_to 'Join now', root_path, class: 'btn btn-primary' %>
+      </div>
+    </div><!--end of row-->
+  </div><!--end of container-->
+</section>

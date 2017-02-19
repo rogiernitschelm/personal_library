@@ -1,0 +1,19 @@
+.search-bar {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-bar input {
+  width: 75%;
+  text-align: center;
+  height: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 11px !important;
+  }
+  .search-bar input {
+    width: 100%;
+  }
+}

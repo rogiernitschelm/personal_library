@@ -1,0 +1,28 @@
+// Place all the styles related to the Chart controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.color-one {
+  background: #3333ff !important;
+}
+
+.color-two {
+  background: #b3b3ff !important;
+}
+
+.color-three {
+  background: #e6e6ff !important;
+}
+
+.chart-box {
+  min-height: 120px;
+  font-size: 20px;
+  margin: 5px;
+  margin-bottom: 25px;
+  padding: 5px;
+  background: rgba(255,255,255,0.9);
+  border: 5px solid rgba(0,0,0,0) !important;
+  border-radius: 3px;
+  padding: 30px;
+
+}

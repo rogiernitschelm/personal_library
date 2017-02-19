@@ -1,0 +1,7 @@
+<h3 class="white">Give a man a name: </h3>
+
+
+<%= form_tag '/songs', :method => "get", id: "search-form" do %>
+  <%= search_field_tag :search, params[:search], placeholder: "song here" %>
+  <%= submit_tag "search", :name => nil, id: "search-form" %>
+<% end %>

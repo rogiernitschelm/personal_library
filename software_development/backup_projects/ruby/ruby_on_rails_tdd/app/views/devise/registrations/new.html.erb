@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col s12 m12 l8">
+    <div class="card grey lighten-4">
+      <div class="card-content grey-text text-darken-3">
+        <h2>Sign up</h2>
+
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+
+          <div class="field">
+            <%= f.label :user_name %><br />
+            <%= f.text_field :user_name, autofocus: true, autocomplete: "on", placeholder: "enter a username" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autocomplete: "on", placeholder: "enter your e-mail adress" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password %>
+            <%= f.password_field :password, autocomplete: "off", placeholder: "enter your password" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "repeat your password" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :birth_date %><br />
+            <%= f.date_field :birth_date %>
+          </div>
+
+          <div class="field">
+            <%= f.label :description %><br />
+            <%= f.text_area :description, placeholder: "add a description"%>
+          </div>
+
+          <button class="actions btn waves-effect waves-light red" type="submit" name="action">Submit
+          </button>
+
+          <hr>
+
+        <% end %>
+
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+  </div>
+</div>

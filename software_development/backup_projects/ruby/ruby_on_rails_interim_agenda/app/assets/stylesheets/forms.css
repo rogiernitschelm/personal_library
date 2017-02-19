@@ -1,0 +1,69 @@
+/* intially hide basic-info form */
+
+.hidden_info_form {
+  display: none;
+}
+
+/* the textarea (only used for descriptions) */
+
+textarea {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+/* form input submit fields */
+
+.actions input {
+  width: 50%;
+  min-width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #212121;
+  font-size: 12px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.actions input:hover {
+  background-color: #ef5350 ;
+}
+
+/* input fields */
+
+.field input {
+  color: #212121;
+  text-align: center;
+}
+.field select, .field input {
+  width: 50%;
+  min-width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #212121;
+  font-size: 12px;
+  text-align: center !important;
+  background-color: #ffffff;
+}
+
+select {
+  width: 400px; text-align-last:center;
+}
+
+input:focus {
+     border: 1px solid #0d47a1 !important;
+     box-shadow: 0 1px 0 0 #000;
+}
+
+.input-field input.invalid {
+ border: 1px solid #ef5350 !important;
+ box-shadow: 0 1px 0 0 #000;
+}

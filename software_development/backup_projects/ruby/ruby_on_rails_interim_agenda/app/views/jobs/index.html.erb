@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col s12">
+    <h2 class="thin">Jobs</h2>
+  </div>
+</div>
+
+<% if user_signed_in? && current_user.type === 'Freelancer'%>
+
+<div class="row">
+  <div class="col l12 m12 s12">
+    <div class="card grey lighten-4">
+      <div class="card-content white-text">
+        <h3 class="card-title grey-text text-darken-4">search</h3>
+
+        <%= render 'search' %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<% end %>
+
+<div class="row">
+  <div class="col s12">
+    <div class="card grey lighten-4">
+      <div class="card-content">
+        <table class="table highlight">
+
+          <!-- table header -->
+
+          <tr>
+            <th>job title</th>
+            <th>date created</th>
+          </tr>
+
+          <!-- loop for creating overview of employers -->
+
+          <% @jobs.each do |job| %>
+            <tr>
+              <td><%= link_to job.title, job_path(job.id) %></td>
+              <td><%= job.created_at %></td>
+            </tr>
+          <% end %>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if user_signed_in? && current_user.type === 'Employer'%>
+
+<div class="row">
+  <div class="col s12">
+
+    <%= link_to 'create job', new_job_path %>
+
+  </div>
+</div>
+
+<% end %>

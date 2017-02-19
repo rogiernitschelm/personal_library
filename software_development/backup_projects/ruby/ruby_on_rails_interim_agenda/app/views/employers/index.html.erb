@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col s12">
+    <h2 class="thin">Employers</h2>
+  </div>
+</div>
+
+<!-- search form for finding employers -->
+
+<div class="row">
+  <div class="col l12 m12 s12">
+    <div class="card grey lighten-4">
+      <div class="card-content white-text">
+        <h3 class="card-title grey-text text-darken-4">search</h3>
+        <%= render 'search' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col s12">
+    <div class="card grey lighten-4">
+      <div class="card-content">
+        <table class="table highlight">
+
+          <!-- table header -->
+
+          <tr>
+            <th>employer</th>
+            <th>location</th>
+            <th>business</th>
+            <th>field</th>
+          </tr>
+
+          <!-- loop for creating overview of employers -->
+
+          <% @employers.each do |employer| %>
+            <tr>
+              <td><%= link_to employer.company_name, employer_path(employer.id) %></td>
+              <td><%= employer.location %></td>
+              <td><%= employer.business %></td>
+              <td><%= employer.field %></td>
+            </tr>
+          <% end %>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

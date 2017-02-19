@@ -1,0 +1,28 @@
+<div class="container background-for-text">
+
+  <div class="row">
+
+    <div class="col-md-12 music-box">
+
+      <h3>Song: <%= @song.title %></h3>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-6 song-box song">
+
+    <p><%= @song.title %></p>
+
+    <p><%= @song.year %></p>
+
+    <p><%= @song.artist.name %></p>
+
+    </div> <br>
+  </div>
+
+  <p><%= link_to "back to songs", songs_index_path %></p>
+
+</div>

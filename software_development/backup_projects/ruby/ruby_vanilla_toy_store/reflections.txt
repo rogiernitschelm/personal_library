@@ -1,0 +1,17 @@
+* Reflections *
+
+** New features **
+
+- Stock-warning: when stock is empty after an order (so a stock of 1 becomes 0), a warning-message is displayed
+- Discount-option: allows the retailer to put a product in the discount-list by calling discount-method. Which takes a new price as an argument.
+
+** Personal reflection **
+
+1. I spend about 2-3 hours working on this I think;
+
+2. The first few steps were the hardest. I kept mixing up the syntax giving me errors that I didn't understand. The @'s still keep confusing me now and then.
+
+3. I build a stock-warning when the stock is almost empty. Because when you figure out the stock is empty, its too late already. Besides its a fairly small feature to implement. The second feature is the option to put a product in a discount-list. Old products often get sold with a discount, so its good to keep track of them.
+
+4. I think I could grow in keeping calm when things aren't working as hoped. I still have a panic-feeling now and then. Also, I should take some breaks, because I am pretty fanatic and my study-sessions are often like 4 hours in a row.
+

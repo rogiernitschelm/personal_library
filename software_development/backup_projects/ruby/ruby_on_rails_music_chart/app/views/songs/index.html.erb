@@ -1,0 +1,39 @@
+<div class="container form-box">
+
+  <div class="row">
+
+    <div class="col-lg-12 title-box">
+
+      <h3>Songs</h3>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-12">
+
+      <%= render "search" %>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <% @songs.each do |song| %>
+
+    <div class="col-sm-3 song">
+
+      <p><%= link_to song.title, song_path(song.id) %></p>
+      <p><%= song.year %></p>
+      <p><%= song.artist.name %></p>
+
+    </div>
+
+    <% end %>
+
+  </div>
+
+</div>

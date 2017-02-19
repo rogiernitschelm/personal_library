@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="center col s12 m12 l12">
+    <div class="card grey lighten-4">
+      <div class="card-content">
+        <div class="card-title">
+          <h2><%= @freelancer.first_name %> <%= @freelancer.last_name %></h2>
+        </div>
+        <table class="table highlight">
+          <!-- table header -->
+          <tr>
+            <th>location</th>
+            <th>business</th>
+            <th>field</th>
+            <th>education</th>
+            <th>availability</th>
+            <th>payrate</th>
+          </tr>
+          <!-- loop for creating overview of employers -->
+            <tr>
+              <td><%= @freelancer.location %></td>
+              <td><%= @freelancer.business %></td>
+              <td><%= @freelancer.field %></td>
+              <td><%= @freelancer.education %></td>
+              <td><%= @freelancer.availability %></td>
+              <td><%= @freelancer.pay_rate %></td>
+            </tr>
+        </table>
+        <p><%= @freelancer.description %></p>
+      </div>
+      <div class="card-action">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- t.string   "type"
+t.string   "company_name"
+t.string   "location"
+t.string   "first_name"
+t.string   "last_name"
+t.date     "birth_date"
+t.string   "gender"
+t.string   "education"
+t.string   "business"
+t.string   "field"
+t.text     "description"
+t.string   "availability"
+t.integer  "pay_rate" -->

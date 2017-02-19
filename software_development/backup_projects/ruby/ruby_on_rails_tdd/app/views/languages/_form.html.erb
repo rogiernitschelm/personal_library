@@ -1,0 +1,15 @@
+<%= form_for @language do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :fonticon %>
+  <%= f.text_field :fonticon %>
+  <em>add the string-part of a font-icon here</em>
+
+  <%= f.submit (@language.new_record? ? "Create" : "Update") %>
+
+<% end %>

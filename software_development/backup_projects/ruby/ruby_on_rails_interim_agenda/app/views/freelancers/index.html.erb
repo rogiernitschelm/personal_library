@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col s12">
+    <h2 class="thin">Freelancers</h2>
+  </div>
+</div>
+
+<!-- searchform gets rendered here -->
+
+<div class="row">
+    <div class="col l12 m12 s12">
+
+    <%= render 'search' %>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <div class="card grey lighten-4">
+      <div class="card-content">
+        <table class="table highlight grey-text text-darken-4">
+
+          <!-- table header -->
+
+          <tr>
+            <th>name of freelancer</th>
+            <th>business</th>
+            <th>field</th>
+            <th>availability</th>
+          </tr>
+
+          <!-- loop for creating overview of employers -->
+
+          <% @freelancers.each do |freelancer| %>
+            <tr>
+              <td><%= link_to freelancer.first_name, freelancer_path(freelancer.id) %></td>
+              <td><%= freelancer.business %></td>
+              <td><%= freelancer.field %></td>
+              <td><%= freelancer.availability %></td>
+            </tr>
+          <% end %>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

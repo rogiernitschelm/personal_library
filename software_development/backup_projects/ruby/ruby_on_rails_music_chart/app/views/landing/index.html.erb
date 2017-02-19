@@ -1,0 +1,25 @@
+<% if !user_signed_in? %>
+
+<div class="row">
+
+  <div class="col-md-12 landing-form">
+
+    <span class="stalk">... sharpen your nails and hop on the rails!</span>
+
+    <ul class="no-bullets">
+
+      <label for="login-field"></label> <!-- for the visually impaired-->
+
+      <li><%= link_to "log In", new_user_session_path, class: "ghost-button" %></li>
+
+      <label for="register-field"></label> <!-- for the visually impaired-->
+
+      <li><%= link_to "sign up", new_user_registration_path, class: "ghost-button" %></li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+<% end %>

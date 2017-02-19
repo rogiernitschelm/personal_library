@@ -1,0 +1,168 @@
+body {
+	font-family: 'Maven Pro', sans-serif;    
+	font-size: 11px;
+    color: #595959;
+
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+.account-box,
+.event-box {	
+	max-width: 300px;
+	min-height: 200px;
+	margin-top: 15px;
+	border-radius: 6px;
+    border: 1px solid #a6a6a6;
+	border-bottom: 2px solid #737373;
+	box-shadow: 5px 5px 3px 2px #c4c4c4;
+	text-align: center;    
+	
+}
+
+#event-message{
+    min-height: 90px;
+    text-align: center;
+
+}
+
+.event-entry {
+    border: 1px solid #595959;
+    box-shadow: 5px 5px 3px 2px #c4c4c4;
+    text-align: left;
+    margin: 12px;
+    padding: 12px;
+}
+
+input {
+    width: 240px;
+    color: #595959;
+    margin: 10px; 
+    border-radius: 4px;
+    border: 1px solid #595959;
+    border-bottom: 1px solid #737373; 
+    height: 30px;  
+    padding: 12px;
+    box-shadow: 3px 3px 3px 2px #fafafa;
+    background-color: #fcfcfc;
+    
+}
+
+input:invalid{   
+    border: 1px solid #ff6666;    
+}
+
+input:focus{    
+    
+    outline: 0;
+    border: 1px solid #0066ff !important;
+    box-shadow: 4px 4px 3px 2px #cce0ff;
+}
+
+.btn {
+    min-width: 150px;
+    border: 1px solid #737373;
+    margin-bottom: 12px; 
+    margin-top: 12px;
+    background-color: white !important;   
+}
+
+.btn:focus{
+    outline: 0;    
+}
+
+.fast-click {
+    background-color: #595959 !important;
+    color: white !important;
+    font-size: 11px;
+}
+
+::-webkit-input-placeholder {
+   font-weight: lighter;
+   font-style: italic;
+   color: #737373;
+}
+
+span {
+    float: left;
+    margin-left: 10px;
+}
+
+
+.error {
+    color: #ff6666;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+    body {
+    font-size: 12px;
+
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+    .account-box,
+    .event-box {
+        min-width: 600px;
+    }
+    input {
+        width: 550px;
+        height: 40px;
+        font-size: 14px;
+
+    }
+    #event-message{
+    min-height: 100px;
+
+}
+
+.error {    
+    font-size: 11px;
+}
+
+}
+
+@media (min-width: 1200px){
+    body {
+    font-size: 13px;
+
+}
+
+label {
+    margin-bottom: 25px;
+}
+    .account-box,
+    .event-box {
+        min-width: 900px;
+        margin-left: 10%;
+
+    }
+    input {
+        width: 850px;
+        height: 50px;
+        font-size: 15px;
+
+    }
+    #event-message{
+    min-height: 120px;
+
+}
+.error {    
+    font-size: 12px;
+}
+
+}
+
+
+

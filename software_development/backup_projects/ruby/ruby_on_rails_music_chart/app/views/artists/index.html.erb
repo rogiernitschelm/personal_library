@@ -1,0 +1,42 @@
+<div class="container form-box">
+
+  <div class="row">
+
+    <div class="col-lg-12 title-box">
+
+      <h3>Artists</h3>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-12">
+
+      <%= render "search" %>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+  <% @artists.each do |artist| %>
+
+    <div class="col-md-3 artist">
+
+      <p><%= image_tag artist.image_url.to_s, class: :thumb %>
+      <em class="name-tag"><%= link_to artist.name, artist_path(artist.id) %></em></p>
+
+      <p><%= artist.description %></p>
+
+    </div>
+
+    <% end %>
+
+    <%= link_to "new", new_artist_path, class: "ghost-button-small ghost-button margin-20" %>
+
+  </div>
+
+</div>

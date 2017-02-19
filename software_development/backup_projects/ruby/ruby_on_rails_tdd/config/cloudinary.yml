@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dinel7mos
+  api_key: '469955145579856'
+  api_secret: 50wCKkMgeQtw3wQ5u1ofLrEwNkM
+  enhance_image_tag: true
+  static_image_support: true
+production:
+  cloud_name: dinel7mos
+  api_key: '469955145579856'
+  api_secret: 50wCKkMgeQtw3wQ5u1ofLrEwNkM
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dinel7mos
+  api_key: '469955145579856'
+  api_secret: 50wCKkMgeQtw3wQ5u1ofLrEwNkM
+  enhance_image_tag: true
+  static_image_support: false
